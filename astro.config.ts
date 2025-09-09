@@ -9,6 +9,10 @@ import spectre from './package/src';
 import node from '@astrojs/node';
 import { spectreDark } from './src/ec-theme';
 
+// Import KaTex rendering
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+
 const {
   GISCUS_REPO,
   GISCUS_REPO_ID,
@@ -18,29 +22,35 @@ const {
   GISCUS_STRICT,
   GISCUS_REACTIONS_ENABLED,
   GISCUS_EMIT_METADATA,
-  GISCUS_LANG
+  GISCUS_LANG,
+  GISCUS_POSITION,
+  GISCUS_THEME,
+  GISCUS_LAZY
 } = loadEnv(process.env.NODE_ENV!, process.cwd(), "");
 
 // https://astro.build/config
 const config = defineConfig({
-  site: 'https://spectre.lou.gg',
+  site: 'https://vallev.me',
   output: 'static',
   integrations: [
     expressiveCode({
       themes: [spectreDark],
     }),
-    mdx(),
+    mdx({
+      remarkPlugins: [remarkMath],
+      rehypePlugins: [rehypeKatex],
+    }),
     sitemap(),
     spectre({
-      name: 'Spectre',
+      name: 'Vaughn Valle',
       openGraph: {
         home: {
-          title: 'Spectre',
-          description: 'A minimalistic theme for Astro.'
+          title: 'Vaughn Valle',
+          description: 'Vaughn\'s personal website'
         },
         blog: {
           title: 'Blog',
-          description: 'News and guides for Spectre.'
+          description: 'My personal loci'
         },
         projects: {
           title: 'Projects'
@@ -56,6 +66,10 @@ const config = defineConfig({
         reactionsEnabled: GISCUS_REACTIONS_ENABLED === "true",
         emitMetadata: GISCUS_EMIT_METADATA === "true",
         lang: GISCUS_LANG,
+        commentsInput: GISCUS_POSITION,
+        theme: GISCUS_THEME,
+        loading: GISCUS_LAZY === "true",
+
       }
     })
   ],

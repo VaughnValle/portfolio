@@ -1,9 +1,58 @@
 [
   {
     "id": 1,
-    "duration": "2024 - present",
-    "company": "Astro Community",
-    "title": "Astro Theme",
-    "description": "Existing as an Astro theme for anyone to use."
+    "duration": "May 2024 – May 2025",
+    "company": "Cybersecurity Club",
+    "title": "President",
+    "description": "Led weekly Capture the Flag (CTF) workshops and Hack Nights catered to students of all skill levels. Demonstrated privilege escalation exploits using Bugcrowd, Active directory attacks, and Metasploit + ADB."
+  },
+  {
+    "id": 2,
+    "duration": "May 2024 – Present",
+    "company": "General Engineering",
+    "title": "Systems Administration + Web Development",
+    "description": "Managed endpoints using Bigfix and ESXi, security and monitoring with Cortex XDR and InsightVM. Developed the course’s website front end with ReactJS and Tailwind CSS on GitHub."
+  },
+  {
+    "id": 3,
+    "duration": "Nov 2023 – Present",
+    "company": "OSIRIS Lab",
+    "title": "CSAW’ 24 Lead and PR Manager",
+    "description": "Deployed a Proxmox server for remote management of containers and VMs, setup Twingate to orchestrate zero trust security for internal resources, setup Astro + Ghost blog site, setup GitHub repo for Kubernetes integration. Wrote rev and forensics challenges for CSAW’ 24 Quals, playtested CTF challenges for CSAW ‘23 & CSAW ‘24."
+  },
+  {
+    "id": 4,
+    "duration": "Sep 2023 – Present",
+    "company": "General Engineering",
+    "title": "Teaching Assistant",
+    "description": "Taught laboratory classes on programming Arduino and Raspberry Pi boards using Arduino C and Python + OpenCV, digital logic using IC chips, CAD using Fusion 360, and architecture design with Autodesk Revit. Mentored 7 accessibility project groups e.g. medicine pill dispenser for the elderly and book scanner for dyslexics."
+  },
+  {
+    "id": 5,
+    "duration": "Jun 2019 – Jun 2022",
+    "company": "The VISION Project",
+    "title": "Project Lead",
+    "description": "Granted a patent by WIPO and Japan (WO2021230759A1). Engineered a wearable computer vision system using an RPi CM 3+ and Intel NCS for visually impaired people, designed a PCB with JLCPCB in China, latency of 157.5 ms yielded 14x faster performance vs RasPi projects."
+  },
+  {
+    "id": 6,
+    "duration": "Oct 2020 – Apr 2022",
+    "company": "ResPi",
+    "title": "Hardware Engineer",
+    "description": "Conducted developmental research using sound data to predict respiratory disease diagnosis in real-time. Built electret microphone hardware for a CNN model with an 89% model accuracy and a 0.05s time diagnosis."
+  },
+  {
+    "id": 7,
+    "duration": "Jul 2020 – Oct 2020",
+    "company": "YouTube",
+    "title": "Creator",
+    "description": "Developed lightweight Linux operating systems for low-end commodity hardware to make the internet accessible. Garnered 337k total views and a community of 503,000 people by creating Linux video tutorials on YouTube."
+  },
+  {
+    "id": 8,
+    "duration": "Aug 2019 – Jun 2020",
+    "company": "EINSTEIN Club of PSHS",
+    "title": "Vice President",
+    "description": "Led and pioneered 6 humanitarian inventions and 4 innovation groups with international recognition and awards."
   }
 ]
